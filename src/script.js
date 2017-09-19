@@ -387,8 +387,10 @@ function usFee(amount) {
 function flip() {
     if (document.getElementById("origin").selectedIndex == "0") {
         document.getElementById("origin").selectedIndex = "1";
+        document.getElementById("originLabel").innerHTML = "Enviando dos:";
     } else if (document.getElementById("origin").selectedIndex == "1") {
         document.getElementById("origin").selectedIndex = "0";
+        document.getElementById("originLabel").innerHTML = "Enviando do:";
     }
 
     if (document.getElementById("recipient").selectedIndex == "0") {
