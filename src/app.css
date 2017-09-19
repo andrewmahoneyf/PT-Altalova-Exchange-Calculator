@@ -28,7 +28,7 @@ body{
     font-size: 2.5rem;
 }
 .h2, h2 {
-    font-size: 2.7rem;
+    font-size: 2.4rem;
 }
 
 form {
@@ -96,6 +96,7 @@ td{
 }
 #th {
     max-width: 68px;
+    vertical-align: middle;
 }
 .invisible {
     display: none;
