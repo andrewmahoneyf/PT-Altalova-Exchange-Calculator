@@ -137,7 +137,7 @@ function tableBody(ptax, recipient, transaction) {
         var bankCost = "$" + bankTotal;
         var mg = "R$" + toBRL(twoDecimal(amount * mgRate));
         var mgCost = "$" + mgTotal;
-        var online = "<div style='font-size: 23px'>Serviço não oferecido</div>";
+        var online = "<div style='font-size: 20px'>Serviço não oferecido</div>";
         var altalova = "R$" + toBRL(twoDecimal(amount * ptax));
         var altalovaCost = "$" + altalovaTotal;
     } else if (recipient == "EUA" && transaction == "enviar") {
@@ -145,7 +145,7 @@ function tableBody(ptax, recipient, transaction) {
         var bankCost = "R$" + toBRL(bankTotal);
         var mg = "$" + twoDecimal(amount/ (mgRate * 10));
         var mgCost = "R$" + toBRL(mgTotal);
-        var online = "<div style='font-size: 23px'>Limite de transferência atingido</div>";
+        var online = "<div style='font-size: 20px'>Limite de transferência atingido</div>";
         if (amount < 10000) {
             var online = "$" + twoDecimal(amount/ (onlineRate * 10));
             var onlineCost = "R$" + toBRL(mgTotal);
@@ -155,12 +155,12 @@ function tableBody(ptax, recipient, transaction) {
     } else if (recipient == "Brasil" && transaction == "receber") {
         var bank = "$" + twoDecimal((amount/ bankRate) + bankFee);
         var mg = "$" + twoDecimal((amount/ mgRate) + mgFee);
-        var online = "<div style='font-size: 23px'>Serviço não oferecido</div>";
+        var online = "<div style='font-size: 20px'>Serviço não oferecido</div>";
         var altalova = "$" + twoDecimal((amount/ ptax) * ourSpread);
     } else {
         var bank = "R$" + toBRL(twoDecimal((amount * (bankRate * 10) + (bankFee * ptax))));
         var mg = "R$" + toBRL(twoDecimal((amount * (mgRate * 10) + (mgFee * ptax))));
-        var online = "<div style='font-size: 23px'>Limite de transferência atingido</div>";
+        var online = "<div style='font-size: 20px'>Limite de transferência atingido</div>";
         if (amount < 3000) {
             var online = "R$" + toBRL(twoDecimal(((amount * (onlineRate * 10)) + 62.10)));
         }    
