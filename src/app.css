@@ -173,9 +173,11 @@ input[type="number"] {
     .h2, h2 {
         font-size: 2rem;
     }
-    #tbody, #thead, #root {
+    #tbody, #thead {
         font-size: 18px;
     }
+    #root {
+        font-size: 16px;
     i {
         font-size: 13px;
     }
